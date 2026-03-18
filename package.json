@@ -20,8 +20,7 @@
   "scripts": {
     "clean": "rimraf build",
     "build": "pnpm clean && tsx build.ts",
-    "prepack": "pnpm build",
-    "pack": "npm pack"
+    "prepack": "pnpm build"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^1.3.0",
