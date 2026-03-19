@@ -1,58 +1,59 @@
-# style-dictionary
+# @naxit/comete-design-tokens
 
-**Bac à sable pour expérimenter avec [Style Dictionary](https://amzn.github.io/style-dictionary/)** avant de l’intégrer au projet **Comète**.
+Design tokens de l'écosystème Comète, compilés en **CSS custom properties** avec support natif du **light/dark mode**.
 
-## Objectif
-
-Ce repo sert à tester la configuration, la transformation et l’export de tokens de design (couleurs, typographie, espaces, etc.) via Style Dictionary.
-
-RM : la version gratuite du plugin Figma `Token Studio`est restreinte.
-
-## Utilisation (package npm)
-
-Le package est publié sous le nom `@aexae/design-tokens`.
+## Installation
 
 ```bash
-pnpm add @aexae/design-tokens
+pnpm add @naxit/comete-design-tokens
 ```
 
-### Import TypeScript
-
-```ts
-import { buttonTokens } from "@aexae/design-tokens";
+```css
+@import "@naxit/comete-design-tokens/css";
 ```
 
-### Import SCSS
+## Utilisation
 
-Les fichiers SCSS générés sont publiés dans `build/scss/` et accessibles via des subpaths.
-
-```scss
-@use "@aexae/design-tokens/scss/button.light.scss";
-@use "@aexae/design-tokens/scss/base.scss";
+```css
+.component {
+  color: var(--text-default);
+  background: var(--background-neutral-default);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
 ```
 
-### Accès aux sources JSON
+Le thème est géré via l'attribut `data-theme` sur `<html>` :
 
-```ts
-import lightTheme from "@aexae/design-tokens/tokens/theme/light.json";
+```html
+<html data-theme="dark">
 ```
+
+## Contenu
+
+Un fichier CSS unique (`build/css/comete-tokens.css`) contenant ~767 custom properties :
+
+**Primitifs** : couleurs (11 palettes), typographie (6 familles, 4 weights, 2 échelles), spacing (16 valeurs), sizing (27 valeurs), border-radius (12), shadows (6 niveaux), animation (durées + easing), z-index, opacity, breakpoints.
+
+**Sémantiques** : background, text, border, icon — déclinés par intention (default, brand, success, warning, critical, information, accent) et par état (default, hovered, pressed, disabled, selected). Déclinaison complète light + dark.
+
+## Stack
+
+- **Source** : JSON W3C Design Tokens, édités via Tokens Studio
+- **Build** : Style Dictionary 5 + @tokens-studio/sd-transforms
+- **Theming** : `:root` (light par défaut), `[data-theme="dark"]` (overrides dark)
 
 ## Commandes
 
 ```bash
-# Installation des dépendances
-pnpm i
-
-# Build des tokens
-pnpm build
+pnpm build        # Compile les tokens → build/css/comete-tokens.css
 ```
 
-## Structure du projet
+## Écosystème
 
-- `tokens` : fichiers sources contenant les design tokens (au format JSON)
-- `build/scss` : fichiers SCSS générés (variables)
-- `dist/` : bundle TypeScript (ESM) + types
+Peer dependency de `@naxit/comete-design-system`. Les tokens `--icon-*` sont consommés par `@naxit/comete-icons`.
 
-## Liens utiles
+## Licence
 
-- 📘 [Style Dictionary – Documentation officielle](https://amzn.github.io/style-dictionary/#/)
+MIT
