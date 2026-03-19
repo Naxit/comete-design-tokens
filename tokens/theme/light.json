@@ -276,15 +276,15 @@
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{green-vogue.500}"
+          "$value": "{green-vogue.600}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{green-vogue.600}"
+          "$value": "{green-vogue.700}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{green-vogue.700}"
+          "$value": "{green-vogue.800}"
         }
       },
       "subtlest": {
@@ -470,7 +470,7 @@
     },
     "inverted": {
       "$type": "color",
-      "$value": "{porcelain.50}"
+      "$value": "{white.100}"
     },
     "success": {
       "$type": "color",
