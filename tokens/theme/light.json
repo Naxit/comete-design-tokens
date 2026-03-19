@@ -176,25 +176,21 @@
       "critical": {
         "$type": "color",
         "$value": "{red.50}"
-      },
-      "DEPRECATED-critical": {
-        "$type": "color",
-        "$value": "{red.50}"
       }
     },
     "success": {
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{salem.600}"
+          "$value": "{salem.700}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{salem.700}"
+          "$value": "{salem.800}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{salem.800}"
+          "$value": "{salem.900}"
         }
       },
       "subtlest": {

@@ -176,10 +176,6 @@
       "critical": {
         "$type": "color",
         "$value": "{red.950}"
-      },
-      "DEPRECATED-critical": {
-        "$type": "color",
-        "$value": "{red.950}"
       }
     },
     "success": {
