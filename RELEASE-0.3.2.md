@@ -1,32 +1,40 @@
 # @naxit/comete-design-tokens v0.3.2 — Première release
 
-La fondation de l'écosystème Comète : un système de design tokens qui alimente l'ensemble des composants, icônes et interfaces du design system.
+La fondation de l'écosystème Comète : **767 CSS custom properties** compilées dans un fichier unique, avec support natif du light/dark mode.
 
-## Ce que contient cette release
+## Contenu
 
-Un fichier CSS unique (`comete-tokens.css`) qui expose l'intégralité des tokens sous forme de **CSS custom properties**, avec support natif du **light/dark mode** via l'attribut `data-theme`.
+### Tokens primitifs (~317)
 
-### Tokens primitifs
+- **Couleurs** — 11 palettes (biscay, lightning-yellow, red, salem, grey, porcelain, blue-marguerite, blue-grey, supernova, green-vogue, saffron) + neutrals avec alpha
+- **Typographie** — 6 familles (Poppins, Outfit, Satoshi, Urbanist, Space Grotesk, SF Mono), 4 weights, 2 échelles de tailles (ui + hero), line-heights, letter-spacing
+- **Spacing** — 16 valeurs (0px → 128px)
+- **Sizing** — 27 valeurs (0px → 1024px)
+- **Border radius** — 12 valeurs (0px → round)
+- **Shadows** — 6 niveaux (none → xl)
+- **Animation** — 5 durées + 4 courbes d'easing
+- **Opacity, Z-index** (9 niveaux), **Breakpoints** (4)
 
-- **Couleurs** — 6 palettes complètes (biscay, lightning-yellow, red, salem, grey, porcelain) + couleurs de marque
-- **Typographie** — Familles, tailles, line-heights, font-weights
-- **Spacing & Sizing** — Échelle cohérente pour marges, paddings et dimensions
-- **Border radius, Shadows, Z-index, Opacity**
-- **Animation** — Durées et courbes d'easing standardisées
-- **Breakpoints** — mobile, tablet, laptop, desktop
+### Tokens sémantiques (~300, light + dark)
 
-### Tokens sémantiques
+- **Surfaces** : background (neutral, brand, selected, success, warning, critical, information, accent, cycle, focused, alpha)
+- **Texte** : primary, selected, disabled, link, subtle, inverted, success, information, warning, critical, subtlest, accent, brand
+- **Bordures** : 12+ variantes sémantiques
+- **Icônes** : 11 couleurs sémantiques (`--icon-default`, `--icon-brand`, etc.)
+- **Interaction** : hovered, pressed
+- **Blanket** : overlay
 
-- Tokens par composant (button, input, etc.) avec toutes les variantes de couleur, taille et spacing
-- États interactifs : default, hovered, pressed, disabled, selected
-- Tokens de surface : background, text, border, icon, blanket
-- Déclinaison complète light + dark
+## Theming
+
+- `:root` expose les primitifs + les tokens sémantiques light par défaut
+- `[data-theme="dark"]` applique les overrides dark
+- Fallback `@media (prefers-color-scheme: dark)` si aucun `data-theme` n'est défini
 
 ## Stack technique
 
-- **Source** : JSON au format Tokens Studio
-- **Build** : Style Dictionary 5 + transforms Tokens Studio → CSS custom properties
-- **Theming** : `:root` pour le light (défaut), `[data-theme="dark"]` pour le dark
+- **Source** : JSON au format W3C Design Tokens (`$type`/`$value`), édités via Tokens Studio
+- **Build** : Style Dictionary 5.0.0 + @tokens-studio/sd-transforms 1.3.0
+- **Sortie** : un fichier CSS unique `build/css/comete-tokens.css` (805 lignes)
 - **Distribution** : GitHub Packages (`@naxit/comete-design-tokens`)
 
 ## Utilisation
@@ -36,16 +44,17 @@ pnpm add @naxit/comete-design-tokens
 ```
 
 ```css
-@import "@naxit/comete-design-tokens/build/css/comete-tokens.css";
+@import "@naxit/comete-design-tokens/css";
 ```
 
 ```css
-.my-component {
+.component {
   color: var(--text-default);
   background: var(--background-neutral-default);
+  border: 1px solid var(--border-default);
 }
 ```
 
 ## Écosystème
 
-Ce package est une **peer dependency** de `@naxit/comete-design-system` et ses tokens de couleur d'icône (`--icon-*`) sont consommés par `@naxit/comete-icons`.
+Peer dependency de `@naxit/comete-design-system`. Les tokens `--icon-*` sont consommés par `@naxit/comete-icons`.
