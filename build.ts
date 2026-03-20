@@ -3,6 +3,7 @@ import { register } from "@tokens-studio/sd-transforms";
 import { transformGroups, formats } from "style-dictionary/enums";
 import fs from "node:fs";
 import path from "node:path";
+import { extractVars } from "./src/css-utils.js";
 
 register(StyleDictionary);
 
@@ -16,8 +17,10 @@ const semanticPrefixes = [
   "interaction",
   "_logo_no_themed_gradients",
 ];
-const isSemanticToken = (token: { path: string[] }) =>
-  semanticPrefixes.includes(token.path[0]);
+const isSemanticToken = (token: { path: string[] }) => {
+  const prefix = token.path[0];
+  return prefix !== undefined && semanticPrefixes.includes(prefix);
+};
 
 // ─── 1. Primitives CSS ──────────────────────────────────────────
 const baseSD = new StyleDictionary({
@@ -70,14 +73,6 @@ for (const theme of ["light", "dark"]) {
 }
 
 // ─── 3. Assemble le fichier CSS unifié ──────────────────────────
-function extractVars(css: string, indent = "  "): string {
-  return css
-    .split("\n")
-    .filter((l) => l.trim().startsWith("--"))
-    .map((l) => `${indent}${l.trim()}`)
-    .join("\n");
-}
-
 const primitives = fs.readFileSync(path.join(CSS_DIR, "_primitives.css"), "utf-8");
 const lightCSS = fs.readFileSync(path.join(CSS_DIR, "_semantic.light.css"), "utf-8");
 const darkCSS = fs.readFileSync(path.join(CSS_DIR, "_semantic.dark.css"), "utf-8");
