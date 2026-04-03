@@ -649,33 +649,33 @@
       "$value": "{green-vogue.400}"
     }
   },
-  "_logo_no_themed_gradients": {
-    "Comete": {
-      "_default": {
+  "logo": {
+    "comete": {
+      "default": {
         "$type": "color",
         "$value": "{comete.biscay.400}"
       },
-      "_gradient-dark": {
+      "gradient-dark": {
         "$type": "color",
         "$value": "{comete.lightning-yellow.500}"
       },
-      "_gradient-light": {
+      "gradient-light": {
         "$type": "color",
         "$value": "{comete.lightning-yellow.300}"
       },
-      "_neutral": {
+      "neutral": {
         "$type": "color",
         "$value": "{comete.biscay.100}"
       },
-      "_subtlest": {
+      "subtlest": {
         "$type": "color",
         "$value": "{porcelain.300}"
       },
-      "_inverted": {
+      "inverted": {
         "$type": "color",
         "$value": "{comete.biscay.950}"
       },
-      "_subtle": {
+      "subtle": {
         "$type": "color",
         "$value": "{porcelain.300}"
       }
