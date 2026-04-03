@@ -653,7 +653,7 @@
     "comete": {
       "default": {
         "$type": "color",
-        "$value": "{comete.biscay.400}"
+        "$value": "{comete.biscay.50}"
       },
       "gradient-dark": {
         "$type": "color",
