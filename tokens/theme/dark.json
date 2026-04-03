@@ -114,6 +114,10 @@
       "default": {
         "$type": "color",
         "$value": "{porcelain.950}"
+      },
+      "inverted": {
+        "$type": "color",
+        "$value": "{white.100}"
       }
     },
     "surface": {
