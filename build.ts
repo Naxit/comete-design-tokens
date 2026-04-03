@@ -15,7 +15,7 @@ const semanticPrefixes = [
   "icon",
   "blanket",
   "interaction",
-  "_logo_no_themed_gradients",
+  "logo",
 ];
 const isSemanticToken = (token: { path: string[] }) => {
   const prefix = token.path[0];
