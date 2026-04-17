@@ -507,10 +507,6 @@
     "on-warning": {
       "$type": "color",
       "$value": "{porcelain.950}"
-    },
-    "on-bold": {
-      "$type": "color",
-      "$value": "{porcelain.50}"
     }
   },
   "border": {
@@ -667,10 +663,6 @@
     "bold": {
       "$type": "color",
       "$value": "{porcelain.900}"
-    },
-    "on-bold": {
-      "$type": "color",
-      "$value": "{porcelain.50}"
     }
   },
   "logo": {
