@@ -503,6 +503,10 @@
     "brand": {
       "$type": "color",
       "$value": "{comete.biscay.700}"
+    },
+    "on-warning": {
+      "$type": "color",
+      "$value": "{porcelain.950}"
     }
   },
   "border": {
@@ -651,6 +655,10 @@
     "night": {
       "$type": "color",
       "$value": "{green-vogue.600}"
+    },
+    "on-warning": {
+      "$type": "color",
+      "$value": "{porcelain.900}"
     }
   },
   "logo": {
