@@ -438,7 +438,7 @@
     }
   },
   "text": {
-    "primary": {
+    "default": {
       "$type": "color",
       "$value": "{porcelain.200}"
     },
