@@ -47,7 +47,7 @@
     "disabled": {
       "default": {
         "$type": "color",
-        "$value": "{grey.950}"
+        "$value": "{grey.900}"
       }
     },
     "brand": {
