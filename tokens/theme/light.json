@@ -659,6 +659,10 @@
     "on-warning": {
       "$type": "color",
       "$value": "{porcelain.900}"
+    },
+    "bold": {
+      "$type": "color",
+      "$value": "{porcelain.900}"
     }
   },
   "logo": {
