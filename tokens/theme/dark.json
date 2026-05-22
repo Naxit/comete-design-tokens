@@ -158,8 +158,22 @@
             "$value": "{green.950}"
           },
           "accent": {
-            "$type": "color",
-            "$value": "{purple.950}"
+            "purple": {
+              "$type": "color",
+              "$value": "{purple.950}"
+            },
+            "teal": {
+              "$type": "color",
+              "$value": "{teal.950}"
+            },
+            "turquoise": {
+              "$type": "color",
+              "$value": "{turquoise.950}"
+            },
+            "magenta": {
+              "$type": "color",
+              "$value": "{magenta.950}"
+            }
           },
           "information": {
             "$type": "color",
@@ -333,32 +347,124 @@
       }
     },
     "accent": {
-      "bold": {
-        "default": {
-          "$type": "color",
-          "$value": "{purple.400}"
+      "purple": {
+        "bold": {
+          "default": {
+            "$type": "color",
+            "$value": "{purple.400}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.200}"
+          }
         },
-        "hovered": {
-          "$type": "color",
-          "$value": "{purple.300}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{purple.200}"
+        "subtlest": {
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.700}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.800}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{purple.900}"
+          }
         }
       },
-      "subtlest": {
-        "pressed": {
-          "$type": "color",
-          "$value": "{purple.700}"
+      "teal": {
+        "bold": {
+          "default": {
+            "$type": "color",
+            "$value": "{teal.400}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.200}"
+          }
         },
-        "hovered": {
-          "$type": "color",
-          "$value": "{purple.800}"
+        "subtlest": {
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.700}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.800}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{teal.900}"
+          }
+        }
+      },
+      "turquoise": {
+        "bold": {
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.400}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.200}"
+          }
         },
-        "default": {
-          "$type": "color",
-          "$value": "{purple.900}"
+        "subtlest": {
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.700}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.800}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.900}"
+          }
+        }
+      },
+      "magenta": {
+        "bold": {
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.400}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.200}"
+          }
+        },
+        "subtlest": {
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.700}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.800}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.900}"
+          }
         }
       }
     },
@@ -493,12 +599,38 @@
       "$value": "{cool-grey.500}"
     },
     "accent": {
-      "$type": "color",
-      "$value": "{purple.200}"
-    },
-    "accent-inverted": {
-      "$type": "color",
-      "$value": "{purple.950}"
+      "purple": {
+        "$type": "color",
+        "$value": "{purple.200}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{teal.200}"
+      },
+      "turquoise": {
+        "$type": "color",
+        "$value": "{turquoise.200}"
+      },
+      "magenta": {
+        "$type": "color",
+        "$value": "{magenta.200}"
+      },
+      "purple-inverted": {
+        "$type": "color",
+        "$value": "{purple.950}"
+      },
+      "teal-inverted": {
+        "$type": "color",
+        "$value": "{teal.950}"
+      },
+      "turquoise-inverted": {
+        "$type": "color",
+        "$value": "{turquoise.950}"
+      },
+      "magenta-inverted": {
+        "$type": "color",
+        "$value": "{magenta.950}"
+      }
     },
     "brand": {
       "$type": "color",
@@ -547,8 +679,22 @@
       "$value": "{blue.400}"
     },
     "accent": {
-      "$type": "color",
-      "$value": "{purple.500}"
+      "purple": {
+        "$type": "color",
+        "$value": "{purple.500}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{teal.500}"
+      },
+      "turquoise": {
+        "$type": "color",
+        "$value": "{turquoise.500}"
+      },
+      "magenta": {
+        "$type": "color",
+        "$value": "{magenta.500}"
+      }
     },
     "day": {
       "$type": "color",
@@ -645,8 +791,22 @@
       "$value": "{cool-grey.500}"
     },
     "accent": {
-      "$type": "color",
-      "$value": "{purple.300}"
+      "purple": {
+        "$type": "color",
+        "$value": "{purple.300}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{teal.300}"
+      },
+      "turquoise": {
+        "$type": "color",
+        "$value": "{turquoise.300}"
+      },
+      "magenta": {
+        "$type": "color",
+        "$value": "{magenta.300}"
+      }
     },
     "day": {
       "$type": "color",
