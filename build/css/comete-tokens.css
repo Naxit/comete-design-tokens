@@ -1,0 +1,996 @@
+/**
+ * Comète Design Tokens
+ * Architecture: primitives → semantic (light/dark)
+ *
+ * Usage:
+ *   <link rel="stylesheet" href="comete-tokens.css">
+ *   <html data-theme="light">  ou  <html data-theme="dark">
+ *
+ * AUTO-GENERATED — DO NOT EDIT MANUALLY
+ */
+
+/* ── Primitives ──────────────────────────────────────────────── */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --duration-instant: 0ms; /** No animation */
+  --duration-fast: 100ms; /** Micro-interactions (hover, focus) */
+  --duration-normal: 200ms; /** Standard transitions */
+  --duration-slow: 300ms; /** Larger transitions (modals, panels) */
+  --duration-slower: 500ms; /** Complex animations */
+  --easing-default: cubic-bezier(0.2, 0, 0.38, 0.9); /** Standard easing for most transitions */
+  --easing-entrance: cubic-bezier(0, 0, 0.38, 0.9); /** Elements entering the screen */
+  --easing-exit: cubic-bezier(0.2, 0, 1, 0.9); /** Elements leaving the screen */
+  --easing-linear: linear; /** Constant speed (spinners, progress) */
+  --comete-blue-50: #f0f8fe;
+  --comete-blue-100: #dceefd;
+  --comete-blue-200: #c1e3fc;
+  --comete-blue-300: #97d2f9;
+  --comete-blue-400: #66b8f4;
+  --comete-blue-500: #429aef;
+  --comete-blue-600: #2c7ee4;
+  --comete-blue-700: #2467d1;
+  --comete-blue-800: #2354aa;
+  --comete-blue-900: #224986;
+  --comete-blue-950: #1e3661;
+  --comete-yellow-50: #fffeea;
+  --comete-yellow-100: #fffcc5;
+  --comete-yellow-200: #fffa86;
+  --comete-yellow-300: #fff146;
+  --comete-yellow-400: #ffe31c;
+  --comete-yellow-500: #f8bf01;
+  --comete-yellow-600: #e19800;
+  --comete-yellow-700: #bb6c02;
+  --comete-yellow-800: #975309;
+  --comete-yellow-900: #7c440b;
+  --comete-yellow-950: #482300;
+  --mobile: 0px; /** Smartphone */
+  --tablet: 600px; /** Tablette */
+  --laptop: 1200px; /** Ordinateur portable (ou tablette en paysage) */
+  --desktop: 1920px; /** Ordinateur fixe / grands écrans */
+  --red-50: #fef2f2;
+  --red-100: #ffe1e1;
+  --red-200: #ffc8c8;
+  --red-300: #ffa2a2;
+  --red-400: #fc6d6d;
+  --red-500: #f44040;
+  --red-600: #e12121;
+  --red-700: #be1717;
+  --red-800: #9d1717;
+  --red-900: #821a1a;
+  --red-950: #2e1717;
+  --green-50: #ebfef4;
+  --green-100: #d0fbe2;
+  --green-200: #a4f6ca;
+  --green-300: #6aebae;
+  --green-400: #2fd88e;
+  --green-500: #0abf76;
+  --green-600: #009b60;
+  --green-700: #00784d;
+  --green-800: #036240;
+  --green-900: #245041;
+  --green-950: #0e2d24;
+  --grey-alpha-500-a: rgba(5, 12, 31, 0.49);
+  --grey-alpha-400-a: rgba(8, 15, 33, 0.31);
+  --grey-alpha-300-a: rgba(11, 18, 14, 0.14);
+  --grey-alpha-200-a: rgba(5, 21, 36, 0.06);
+  --grey-alpha-100-a: rgba(23, 23, 23, 0.03);
+  --grey-solid-50: #f6f6f6;
+  --grey-solid-100: #f8f8f8;
+  --grey-solid-200: #f0f1f2;
+  --grey-solid-300: #dddee1;
+  --grey-solid-400: #b7b9be;
+  --grey-solid-500: #8c8f97;
+  --grey-solid-600: #7d818a;
+  --grey-solid-700: #6b6e76;
+  --grey-solid-800: #505258;
+  --grey-solid-900: #3b3d42;
+  --grey-solid-950: #292a2e;
+  --white-0: rgba(255, 255, 255, 0);
+  --white-2: rgba(255, 255, 255, 0.02);
+  --white-4: rgba(255, 255, 255, 0.04);
+  --white-6: rgba(255, 255, 255, 0.06);
+  --white-8: rgba(255, 255, 255, 0.08);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-100: #ffffff;
+  --black-0: rgba(9, 9, 11, 0);
+  --black-2: rgba(9, 9, 11, 0.02);
+  --black-4: rgba(9, 9, 11, 0.04);
+  --black-6: rgba(9, 9, 11, 0.06);
+  --black-8: rgba(9, 9, 11, 0.08);
+  --black-10: rgba(9, 9, 11, 0.1);
+  --black-20: rgba(9, 9, 11, 0.2);
+  --black-30: rgba(9, 9, 11, 0.3);
+  --black-40: rgba(9, 9, 11, 0.4);
+  --black-50: rgba(9, 9, 11, 0.5);
+  --black-60: rgba(9, 9, 11, 0.6);
+  --black-70: rgba(9, 9, 11, 0.7);
+  --black-80: rgba(9, 9, 11, 0.8);
+  --black-90: rgba(9, 9, 11, 0.9);
+  --black-100: #09090b;
+  --purple-50: #f3f0ff;
+  --purple-100: #e6e8f9;
+  --purple-200: #d1d4f4;
+  --purple-300: #b5b8ec;
+  --purple-400: #9897e2;
+  --purple-500: #8270db;
+  --purple-600: #6e5dc6;
+  --purple-700: #5e4db2;
+  --purple-800: #51458e;
+  --purple-900: #453d72;
+  --purple-950: #292442;
+  --cool-grey-50: #f7f8f8;
+  --cool-grey-100: #eaedee;
+  --cool-grey-200: #d8dedf;
+  --cool-grey-300: #b5c1c4;
+  --cool-grey-400: #8d9fa3;
+  --cool-grey-500: #6f8488;
+  --cool-grey-600: #596b70;
+  --cool-grey-700: #49585b;
+  --cool-grey-800: #3f4a4d;
+  --cool-grey-900: #374043;
+  --cool-grey-950: #252a2c;
+  --yellow-50: #fdfee8;
+  --yellow-100: #fef2c3;
+  --yellow-200: #fee78a;
+  --yellow-300: #fdd847;
+  --yellow-400: #facc15;
+  --yellow-500: #eabd08;
+  --yellow-600: #caa204;
+  --yellow-700: #a18207;
+  --yellow-800: #856d0e;
+  --yellow-900: #715e12;
+  --yellow-950: #292410;
+  --blue-50: #eff8ff;
+  --blue-100: #ddf1ff;
+  --blue-200: #b4e3ff;
+  --blue-300: #71cdff;
+  --blue-400: #26b5ff;
+  --blue-500: #009bfe;
+  --blue-600: #0076d8;
+  --blue-700: #0060b0;
+  --blue-800: #005391;
+  --blue-900: #034477;
+  --blue-950: #023059;
+  --orange-50: #fffbed;
+  --orange-100: #fff6d4;
+  --orange-200: #ffe8a9;
+  --orange-300: #ffd672;
+  --orange-400: #feb939;
+  --orange-500: #fca013;
+  --orange-600: #f68909;
+  --orange-700: #c56509;
+  --orange-800: #9c4f10;
+  --orange-900: #7e4210;
+  --orange-950: #441f06;
+  --lime-50: #f6faeb;
+  --lime-100: #e9f4d3;
+  --lime-200: #d4eaac;
+  --lime-300: #b7db7b;
+  --lime-400: #9bc952;
+  --lime-500: #82b536;
+  --lime-600: #608a26;
+  --lime-700: #4b6a21;
+  --lime-800: #3d551f;
+  --lime-900: #35491e;
+  --lime-950: #1a270c;
+  --magenta-50: #fcf3f9;
+  --magenta-100: #f9eaf5;
+  --magenta-200: #f6d4eb;
+  --magenta-300: #efb2da;
+  --magenta-400: #e581c1;
+  --magenta-500: #da62ac;
+  --magenta-600: #c63c8a;
+  --magenta-700: #aa2c6f;
+  --magenta-800: #8d275d;
+  --magenta-900: #762550;
+  --magenta-950: #47102d;
+  --teal-50: #eefafd;
+  --teal-100: #d5f1f8;
+  --teal-200: #afe3f2;
+  --teal-300: #79cee7;
+  --teal-400: #42b2d7;
+  --teal-500: #1f92bb;
+  --teal-600: #1c759e;
+  --teal-700: #1e6080;
+  --teal-800: #215069;
+  --teal-900: #1f435a;
+  --teal-950: #0f2b3d;
+  --turquoise-50: #edfffd;
+  --turquoise-100: #c0fffc;
+  --turquoise-200: #81fffb;
+  --turquoise-300: #3afff9;
+  --turquoise-400: #00ffef;
+  --turquoise-500: #00e2d5;
+  --turquoise-600: #00b7b1;
+  --turquoise-700: #00918d;
+  --turquoise-800: #007271;
+  --turquoise-900: #045d5d;
+  --turquoise-950: #00373a;
+  --dark-grey-alpha-500-a: rgba(155, 180, 202, 0.5);
+  --dark-grey-alpha-400-a: rgba(191, 219, 248, 0.28);
+  --dark-grey-alpha-300-a: rgba(166, 197, 226, 0.16);
+  --dark-grey-alpha-200-a: rgba(161, 189, 217, 0.08);
+  --dark-grey-alpha-100-a: rgba(188, 214, 240, 0.04);
+  --dark-grey-solid-50: #1f1f21;
+  --dark-grey-solid-100: #242528;
+  --dark-grey-solid-200: #2b2c2f;
+  --dark-grey-solid-300: #303134;
+  --dark-grey-solid-400: #3d3f43;
+  --dark-grey-solid-500: #63666b;
+  --dark-grey-solid-600: #7e8188;
+  --dark-grey-solid-700: #96999e;
+  --dark-grey-solid-800: #a9abaf;
+  --dark-grey-solid-900: #bfc1c4;
+  --dark-grey-solid-950: #cecfd2;
+  --opacity-0: 0;
+  --opacity-25: 0.25;
+  --opacity-50: 0.5;
+  --opacity-75: 0.75;
+  --opacity-100: 1;
+  --opacity-disabled: 0.38;
+  --opacity-overlay: 0.5;
+  --shadow-key-0: 0px 0px 0px 0px #00000000;
+  --shadow-key-1: 0px 1px 2px 0px #1e36610d;
+  --shadow-key-2: 0px 1px 2px 0px #1e366114;
+  --shadow-key-3: 0px 1px 3px 0px #1e36611c;
+  --shadow-key-4: 0px 2px 3px 0px #1e36611f;
+  --shadow-key-5: 0px 2px 3px 0px #1e36611f;
+  --shadow-key-6: 0px 4px 4px 0px #1e366124;
+  --shadow-ambiant-0: 0px 0px 0px 0px #00000000;
+  --shadow-ambiant-1: 0px 1px 3px 0px #1e36610d;
+  --shadow-ambiant-2: 0px 2px 6px 2px #1e366114;
+  --shadow-ambiant-3: 0px 4px 8px 3px #1e36611c;
+  --shadow-ambiant-4: 0px 6px 10px 4px #1e36611f;
+  --shadow-ambiant-5: 0px 6px 10px 4px #1e36611f;
+  --shadow-ambiant-6: 0px 8px 12px 6px #1e366124;
+  --size0: 0px; /** 0 */
+  --size0125: 1px; /** 1 */
+  --size025: 2px; /** 2 */
+  --size0375: 3px; /** 3 */
+  --size050: 4px; /** 4 */
+  --size0625: 5px; /** 5 */
+  --size075: 6px; /** 6 */
+  --size100: 8px; /** 8 */
+  --size125: 10px; /** 10 */
+  --size150: 12px; /** 12 */
+  --size175: 14px; /** 14 */
+  --size200: 16px; /** 16 */
+  --size225: 18px; /** 18 */
+  --size250: 20px; /** 20 */
+  --size300: 24px; /** 24 */
+  --size350: 28px; /** 28 */
+  --size400: 32px; /** 32 */
+  --size500: 40px; /** 40 */
+  --size600: 48px; /** 48 */
+  --size800: 64px; /** 64 */
+  --size1000: 80px; /** 80 */
+  --size1200: 96px; /** 96 */
+  --size1600: 128px; /** 128 */
+  --size3200: 256px; /** 256 */
+  --size6400: 512px; /** 512 */
+  --size12800: 1024px; /** 1024 */
+  --font-family-code: SF Mono;
+  --font-family-poppins: Poppins;
+  --font-family-outfit: Outfit;
+  --font-family-satoshi: Satoshi;
+  --font-family-urbanist: Urbanist;
+  --font-family-space-grotesk: Space grotesk;
+  --font-style-italic: Italic;
+  --font-style-normal: normal;
+  --font-weight-regular: 400; /** pour les paragraphes génériques afin de contraster avec les titres, et pour le texte de longueur moyenne dans les composants */
+  --font-weight-medium: 500; /** Pour l'alignement avec l'iconographie. Utilisez cette épaisseur dans la plupart des composants et chaque fois que du texte peut être vu à côté des icônes linéaires. */
+  --font-weight-semibold: 600; /** Pour les titres ou pour souligner certains chiffres (widgets de métriques) */
+  --font-weight-bold: 700; /** Pour des cas particuliers où un texte doit être différencié ou davantage mis en valeur. Utilisez cette pondération avec parcimonie. */
+  --line-height-ui-xxl: 40px;
+  --line-height-ui-xl: 32px;
+  --line-height-ui-l: 32px;
+  --line-height-ui-m: 24px;
+  --line-height-ui-s: 20px;
+  --line-height-ui-xs: 18px;
+  --line-height-ui-xxs: 16px;
+  --line-height-ui-xxxs: 14px;
+  --line-height-hero-xxl: 120px;
+  --line-height-hero-xl: 96px;
+  --line-height-hero-l: 80px;
+  --line-height-hero-m: 72px;
+  --line-height-hero-s: 64px;
+  --line-height-hero-xs: 56px;
+  --line-height-hero-xxs: 48px;
+  --font-size-ui-xxl: 32px; /** 2 rem / 32 px */
+  --font-size-ui-xl: 28px; /** 1.75 rem / 28 px */
+  --font-size-ui-l: 24px; /** 1.5 rem / 24 px */
+  --font-size-ui-m: 20px; /** 1.25 rem / 20 px */
+  --font-size-ui-s: 16px; /** 1 rem / 16 px */
+  --font-size-ui-xs: 14px; /** 0.875 rem / 14 px */
+  --font-size-ui-xxs: 12px; /** 0.75 rem / 12 px */
+  --font-size-ui-xxxs: 10px; /** 0.625 rem / 10 px */
+  --font-size-hero-xxl: 96px; /** 12 rem / 96 px */
+  --font-size-hero-xl: 80px; /** 10 rem / 80 px */
+  --font-size-hero-l: 72px; /** 9 rem / 72 px */
+  --font-size-hero-m: 64px; /** 8 rem / 64 px */
+  --font-size-hero-s: 56px; /** 7 rem / 56 px */
+  --font-size-hero-xs: 48px; /** 6 rem / 48 px */
+  --font-size-hero-xxs: 40px; /** 5 rem / 40 px */
+  --letter-spacing-negative-tight: -0.5px;
+  --letter-spacing-negative-extra-tight: -1px;
+  --letter-spacing-normal: 0px;
+  --letter-spacing-positive-extra-wide: 0.5px;
+  --letter-spacing-positive-wide: 0.2px;
+  --paragraph-spacing-xxl: 40px; /** 2.5rem / 40 px */
+  --paragraph-spacing-xl: 32px; /** 2rem / 32 px */
+  --paragraph-spacing-l: 24px; /** 1.5rem / 24 px */
+  --paragraph-spacing-m: 16px; /** 1rem / 16 px */
+  --paragraph-spacing-s: 12px; /** 0.75rem / 12 px */
+  --paragraph-spacing-xs: 8px; /** 0.5rem / 8 px */
+  --paragraph-spacing-xxs: 4px; /** 0.25rem / 4 px */
+  --paragraph-spacing-none: 0px; /** 0rem / 0 px */
+  --paragraph-indent-l: 32px; /** 2rem / 32px */
+  --paragraph-indent-m: 24px; /** 1.5rem / 24px */
+  --paragraph-indent-s: 16px; /** 1rem / 16px */
+  --paragraph-indent-none: 0px; /** 0rem / 0px */
+  --z-index-hide: -1;
+  --z-index-base: 0;
+  --z-index-raised: 1;
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-overlay: 300;
+  --z-index-modal: 400;
+  --z-index-popover: 500;
+  --z-index-toast: 600;
+  --z-index-tooltip: 700;
+  --radius0: var(--size0); /** Radius0 (0 px) */
+  --radius0125: var(--size0125); /** Radius0125 (1 px) */
+  --radius025: var(--size025); /** Radius025 (2 px) */
+  --radius0375: var(--size0375); /** Radius0375 (3 px) */
+  --radius050: var(--size050); /** Radius050 (4 px) */
+  --radius0625: var(--size0625); /** Radius0625 (5 px) */
+  --radius075: var(--size075); /** Radius075 (6 px) */
+  --radius100: var(--size100); /** Radius100 (8 px) */
+  --radius150: var(--size150); /** Radius150 (12 px) */
+  --radius200: var(--size200); /** Radius200 (16 px) */
+  --radius300: var(--size300); /** Radius300 (24 px) */
+  --radius-round: var(--size12800); /** RadiusROUND (1024 px) */
+  --elevation-none: var(--shadow-key-0), var(--shadow-ambiant-0);
+  --elevation-xsmall: var(--shadow-key-1), var(--shadow-ambiant-1);
+  --elevation-small: var(--shadow-key-2), var(--shadow-ambiant-2);
+  --elevation-medium: var(--shadow-key-3), var(--shadow-ambiant-3);
+  --elevation-large: var(--shadow-key-4), var(--shadow-ambiant-4);
+  --elevation-xlarge: var(--shadow-key-5), var(--shadow-ambiant-5);
+  --elevation-xxlarge: var(--shadow-key-6), var(--shadow-ambiant-6);
+  --space0: var(--size0); /** Spacing 0 (0 px) */
+  --space025: var(--size025); /** Spacing 025 (2 px) */
+  --space0375: var(--size0375); /** Spacing 0375 (3 px) */
+  --space050: var(--size050); /** Spacing 050 (4 px) */
+  --space075: var(--size075); /** Spacing 075 (6 px) */
+  --space100: var(--size100); /** Spacing 100 (8 px) */
+  --space150: var(--size150); /** Spacing 150 (12 px) */
+  --space200: var(--size200); /** Spacing 200 (16 px) */
+  --space125: var(--size125); /** Spacing 125 (10 px) */
+  --space250: var(--size250); /** Spacing 250 (20 px) */
+  --space300: var(--size300); /** Spacing 300 (24 px) */
+  --space350: var(--size350); /** Spacing 350 (28 px) */
+  --space400: var(--size400); /** Spacing 400 (32 px) */
+  --space500: var(--size500); /** Spacing 500 (40 px) */
+  --space600: var(--size600); /** Spacing 600 (48 px) */
+  --space800: var(--size800); /** Spacing 800 (64 px) */
+  --space1000: var(--size1000); /** Spacing 1000 (80 px) */
+  --space1200: var(--size1200); /** Spacing 1200 (96 px) */
+  --space1600: var(--size1600); /** Spacing 1600 (128 px) */
+  --font-family-primary: var(--font-family-poppins);
+}
+
+
+/* ── Semantic (light = default) ──────────────────────────────── */
+:root {
+  --background-neutral-subtler-default: #eaedee;
+  --background-neutral-subtler-hovered: #d8dedf;
+  --background-neutral-subtler-pressed: #b5c1c4;
+  --background-neutral-bold-default: #3f4a4d;
+  --background-neutral-bold-hovered: #374043;
+  --background-neutral-bold-pressed: #252a2c;
+  --background-neutral-subtlest-default: #f7f8f8;
+  --background-neutral-subtlest-hovered: #eaedee;
+  --background-neutral-subtlest-pressed: #d8dedf;
+  --background-disabled-default: #f8f8f8;
+  --background-brand-subtlest-default: #dceefd;
+  --background-brand-subtlest-hovered: #c1e3fc;
+  --background-brand-subtlest-pressed: #97d2f9;
+  --background-brand-bold-default: #2467d1;
+  --background-brand-bold-hovered: #2354aa;
+  --background-brand-bold-pressed: #224986;
+  --background-selected-bold-hovered: #224986;
+  --background-selected-bold-pressed: #1e3661;
+  --background-selected-bold-default: #2354aa;
+  --background-selected-subtlest-pressed: #97d2f9;
+  --background-selected-subtlest-hovered: #c1e3fc;
+  --background-selected-subtlest-default: #dceefd;
+  --background-default-default: #ffffff;
+  --background-default-inverted: #252a2c;
+  --background-surface-default: #ffffff;
+  --background-surface-mask: rgba(5, 12, 31, 0.49);
+  --background-surface-elevation-sunken-default: #f7f8f8;
+  --background-surface-elevation-sunken-hovered: #eaedee;
+  --background-surface-elevation-sunken-pressed: #d8dedf;
+  --background-surface-elevation-overlay-default: #ffffff;
+  --background-surface-elevation-overlay-critical: #fef2f2;
+  --background-surface-elevation-overlay-success: #ebfef4;
+  --background-surface-elevation-overlay-accent-purple: #f3f0ff;
+  --background-surface-elevation-overlay-accent-teal: #eefafd;
+  --background-surface-elevation-overlay-accent-turquoise: #edfffd;
+  --background-surface-elevation-overlay-accent-magenta: #fcf3f9;
+  --background-surface-elevation-overlay-information: #eff8ff;
+  --background-surface-elevation-overlay-warning: #fdfee8;
+  --background-surface-elevation-raise-default: #ffffff;
+  --background-surface-critical: #fef2f2;
+  --background-success-bold-default: #00784d;
+  --background-success-bold-hovered: #036240;
+  --background-success-bold-pressed: #245041;
+  --background-success-subtlest-hovered: #a4f6ca;
+  --background-success-subtlest-pressed: #6aebae;
+  --background-success-subtlest-default: #d0fbe2;
+  --background-warning-bold-default: #facc15;
+  --background-warning-bold-hovered: #eabd08;
+  --background-warning-bold-pressed: #caa204;
+  --background-warning-subtlest-pressed: #fdd847;
+  --background-warning-subtlest-hovered: #fee78a;
+  --background-warning-subtlest-default: #fef2c3;
+  --background-critical-bold-default: #e12121;
+  --background-critical-bold-hovered: #be1717;
+  --background-critical-bold-pressed: #9d1717;
+  --background-critical-subtlest-pressed: #ffa2a2;
+  --background-critical-subtlest-hovered: #ffc8c8;
+  --background-critical-subtlest-default: #ffe1e1;
+  --background-information-bold-default: #0076d8;
+  --background-information-bold-hovered: #0060b0;
+  --background-information-bold-pressed: #005391;
+  --background-information-subtlest-pressed: #71cdff;
+  --background-information-subtlest-hovered: #b4e3ff;
+  --background-information-subtlest-default: #ddf1ff;
+  --background-client-bold-default: #429aef;
+  --background-client-bold-hovered: #2c7ee4;
+  --background-client-bold-pressed: #2467d1;
+  --background-client-subtlest-default: #dceefd;
+  --background-client-subtlest-hovered: #c1e3fc;
+  --background-client-subtlest-pressed: #97d2f9;
+  --background-accent-purple-bold-default: #6e5dc6;
+  --background-accent-purple-bold-hovered: #5e4db2;
+  --background-accent-purple-bold-pressed: #453d72;
+  --background-accent-purple-subtlest-pressed: #b5b8ec;
+  --background-accent-purple-subtlest-hovered: #d1d4f4;
+  --background-accent-purple-subtlest-default: #e6e8f9;
+  --background-accent-teal-bold-default: #1c759e;
+  --background-accent-teal-bold-hovered: #1e6080;
+  --background-accent-teal-bold-pressed: #1f435a;
+  --background-accent-teal-subtlest-pressed: #79cee7;
+  --background-accent-teal-subtlest-hovered: #afe3f2;
+  --background-accent-teal-subtlest-default: #d5f1f8;
+  --background-accent-turquoise-bold-default: #00b7b1;
+  --background-accent-turquoise-bold-hovered: #00918d;
+  --background-accent-turquoise-bold-pressed: #045d5d;
+  --background-accent-turquoise-subtlest-pressed: #3afff9;
+  --background-accent-turquoise-subtlest-hovered: #81fffb;
+  --background-accent-turquoise-subtlest-default: #c0fffc;
+  --background-accent-magenta-bold-default: #c63c8a;
+  --background-accent-magenta-bold-hovered: #aa2c6f;
+  --background-accent-magenta-bold-pressed: #762550;
+  --background-accent-magenta-subtlest-pressed: #efb2da;
+  --background-accent-magenta-subtlest-hovered: #f6d4eb;
+  --background-accent-magenta-subtlest-default: #f9eaf5;
+  --background-cycle-night-bold-default: #0060b0;
+  --background-cycle-night-bold-hovered: #005391;
+  --background-cycle-night-bold-pressed: #034477;
+  --background-cycle-night-subtlest-default: #eff8ff;
+  --background-cycle-night-subtlest-hovered: #ddf1ff;
+  --background-cycle-night-subtlest-pressed: #b4e3ff;
+  --background-cycle-day-bold-default: #c56509;
+  --background-cycle-day-bold-hovered: #9c4f10;
+  --background-cycle-day-bold-pressed: #7e4210;
+  --background-cycle-day-subtlest-default: #fffbed;
+  --background-cycle-day-subtlest-hovered: #fff6d4;
+  --background-cycle-day-subtlest-pressed: #ffe8a9;
+  --background-focused-default: #009bfe;
+  --background-alpha-default: rgba(5, 12, 31, 0.49);
+  --text-default: #252a2c;
+  --text-selected: #0076d8;
+  --text-disabled: #dddee1;
+  --text-link-default: #0076d8;
+  --text-link-hovered: #0060b0;
+  --text-link-pressed: #005391;
+  --text-subtle: #49585b;
+  --text-inverted: #ffffff;
+  --text-success: #036240;
+  --text-information: #0060b0;
+  --text-warning: #856d0e;
+  --text-critical: #9d1717;
+  --text-subtlest: #6f8488;
+  --text-accent-purple: #5e4db2;
+  --text-accent-teal: #1e6080;
+  --text-accent-turquoise: #00918d;
+  --text-accent-magenta: #aa2c6f;
+  --text-accent-purple-inverted: #f3f0ff;
+  --text-accent-teal-inverted: #eefafd;
+  --text-accent-turquoise-inverted: #edfffd;
+  --text-accent-magenta-inverted: #fcf3f9;
+  --text-brand: #2467d1;
+  --text-on-warning: #252a2c;
+  --border-disabled: #f8f8f8;
+  --border-subtle: #eaedee;
+  --border-focused: #009bfe;
+  --border-bold: #b5c1c4;
+  --border-success-bold: #009b60;
+  --border-success-subtle: #a4f6ca;
+  --border-critical-bold: #e12121;
+  --border-critical-subtle: #ffc8c8;
+  --border-warning-bold: #caa204;
+  --border-warning-subtle: #fee78a;
+  --border-information-bold: #0076d8;
+  --border-information-subtle: #b4e3ff;
+  --border-selected: #009bfe;
+  --border-accent-purple-bold: #8270db;
+  --border-accent-purple-subtle: #d1d4f4;
+  --border-accent-teal-bold: #1f92bb;
+  --border-accent-teal-subtle: #afe3f2;
+  --border-accent-turquoise-bold: #00e2d5;
+  --border-accent-turquoise-subtle: #81fffb;
+  --border-accent-magenta-bold: #da62ac;
+  --border-accent-magenta-subtle: #f6d4eb;
+  --border-day: #f68909;
+  --border-night: #0076d8;
+  --border-night-subtle: #71cdff;
+  --border-day-subtle: #fff6d4;
+  --border-brand: #2467d1;
+  --border-selected-inverted: #b4e3ff;
+  --border-focus-inverted: #ddf1ff;
+  --border-focus: #009bfe;
+  --border-neutral: #374043;
+  --border-default: #d8dedf;
+  --border-invisible: #ffffff;
+  --border-inverted: #ffffff;
+  --icon-default: #005391;
+  --icon-disabled: #dddee1;
+  --icon-inverted: #f7f8f8;
+  --icon-warning: #856d0e;
+  --icon-critical: #e12121;
+  --icon-success: #009b60;
+  --icon-brand: #2354aa;
+  --icon-selected: #0076d8;
+  --icon-information: #0076d8;
+  --icon-subtle: #596b70;
+  --icon-subtlest: #6f8488;
+  --icon-accent-purple: #8270db;
+  --icon-accent-teal: #1f92bb;
+  --icon-accent-turquoise: #00e2d5;
+  --icon-accent-magenta: #da62ac;
+  --icon-day: #f68909;
+  --icon-night: #0076d8;
+  --icon-on-warning: #374043;
+  --icon-bold: #374043;
+  --logo-comete-default: #1e3661;
+  --logo-comete-gradient-dark: #f8bf01;
+  --logo-comete-gradient-light: #fff146;
+  --logo-comete-neutral: #224986;
+  --logo-comete-subtlest: #596b70;
+  --logo-comete-inverted: #f0f8fe;
+  --logo-comete-subtle: #596b70;
+  --blanket-default: rgba(5, 12, 31, 0.49);
+  --interaction-hovered: rgba(0, 0, 0, 0.16);
+  --interaction-pressed: rgba(0, 0, 0, 0.32);
+  --interaction-hovered-mediapicker: rgba(0, 0, 0, 0.16);
+  --interaction-pressed-mediapicker: rgba(0, 0, 0, 0.32);
+}
+
+/* ── Semantic (dark) ─────────────────────────────────────────── */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="dark"] {
+  --background-neutral-subtler-default: #49585b;
+  --background-neutral-subtler-hovered: #596b70;
+  --background-neutral-subtler-pressed: #6f8488;
+  --background-neutral-bold-default: #eaedee;
+  --background-neutral-bold-hovered: #d8dedf;
+  --background-neutral-bold-pressed: #b5c1c4;
+  --background-neutral-subtlest-default: #49585b;
+  --background-neutral-subtlest-hovered: #596b70;
+  --background-neutral-subtlest-pressed: #6f8488;
+  --background-disabled-default: #3b3d42;
+  --background-brand-subtlest-default: #1e3661;
+  --background-brand-subtlest-hovered: #224986;
+  --background-brand-subtlest-pressed: #2354aa;
+  --background-brand-bold-default: #97d2f9;
+  --background-brand-bold-hovered: #c1e3fc;
+  --background-brand-bold-pressed: #dceefd;
+  --background-selected-bold-hovered: #dceefd;
+  --background-selected-bold-pressed: #f0f8fe;
+  --background-selected-bold-default: #c1e3fc;
+  --background-selected-subtlest-pressed: #2354aa;
+  --background-selected-subtlest-hovered: #224986;
+  --background-selected-subtlest-default: #1e3661;
+  --background-default-default: #252a2c;
+  --background-default-inverted: #ffffff;
+  --background-surface-default: #374043;
+  --background-surface-mask: rgba(8, 15, 33, 0.31);
+  --background-surface-elevation-sunken-default: #252a2c;
+  --background-surface-elevation-sunken-hovered: #374043;
+  --background-surface-elevation-sunken-pressed: #3f4a4d;
+  --background-surface-elevation-overlay-default: #3f4a4d;
+  --background-surface-elevation-overlay-critical: #2e1717;
+  --background-surface-elevation-overlay-success: #0e2d24;
+  --background-surface-elevation-overlay-accent-purple: #292442;
+  --background-surface-elevation-overlay-accent-teal: #0f2b3d;
+  --background-surface-elevation-overlay-accent-turquoise: #00373a;
+  --background-surface-elevation-overlay-accent-magenta: #47102d;
+  --background-surface-elevation-overlay-information: #023059;
+  --background-surface-elevation-overlay-warning: #292410;
+  --background-surface-elevation-raise-default: #49585b;
+  --background-surface-critical: #2e1717;
+  --background-success-bold-default: #0abf76;
+  --background-success-bold-hovered: #2fd88e;
+  --background-success-bold-pressed: #6aebae;
+  --background-success-subtlest-hovered: #036240;
+  --background-success-subtlest-pressed: #00784d;
+  --background-success-subtlest-default: #245041;
+  --background-warning-bold-default: #eabd08;
+  --background-warning-bold-hovered: #facc15;
+  --background-warning-bold-pressed: #fdd847;
+  --background-warning-subtlest-pressed: #eabd08;
+  --background-warning-subtlest-hovered: #caa204;
+  --background-warning-subtlest-default: #a18207;
+  --background-critical-bold-default: #fc6d6d;
+  --background-critical-bold-hovered: #ffa2a2;
+  --background-critical-bold-pressed: #ffc8c8;
+  --background-critical-subtlest-pressed: #be1717;
+  --background-critical-subtlest-hovered: #9d1717;
+  --background-critical-subtlest-default: #821a1a;
+  --background-information-bold-default: #009bfe;
+  --background-information-bold-hovered: #26b5ff;
+  --background-information-bold-pressed: #71cdff;
+  --background-information-subtlest-pressed: #0060b0;
+  --background-information-subtlest-hovered: #005391;
+  --background-information-subtlest-default: #034477;
+  --background-client-bold-default: #429aef;
+  --background-client-bold-hovered: #66b8f4;
+  --background-client-bold-pressed: #97d2f9;
+  --background-client-subtlest-default: #224986;
+  --background-client-subtlest-hovered: #2354aa;
+  --background-client-subtlest-pressed: #2467d1;
+  --background-accent-purple-bold-default: #9897e2;
+  --background-accent-purple-bold-hovered: #b5b8ec;
+  --background-accent-purple-bold-pressed: #d1d4f4;
+  --background-accent-purple-subtlest-pressed: #5e4db2;
+  --background-accent-purple-subtlest-hovered: #51458e;
+  --background-accent-purple-subtlest-default: #453d72;
+  --background-accent-teal-bold-default: #42b2d7;
+  --background-accent-teal-bold-hovered: #79cee7;
+  --background-accent-teal-bold-pressed: #afe3f2;
+  --background-accent-teal-subtlest-pressed: #1e6080;
+  --background-accent-teal-subtlest-hovered: #215069;
+  --background-accent-teal-subtlest-default: #1f435a;
+  --background-accent-turquoise-bold-default: #00ffef;
+  --background-accent-turquoise-bold-hovered: #3afff9;
+  --background-accent-turquoise-bold-pressed: #81fffb;
+  --background-accent-turquoise-subtlest-pressed: #00918d;
+  --background-accent-turquoise-subtlest-hovered: #007271;
+  --background-accent-turquoise-subtlest-default: #045d5d;
+  --background-accent-magenta-bold-default: #e581c1;
+  --background-accent-magenta-bold-hovered: #efb2da;
+  --background-accent-magenta-bold-pressed: #f6d4eb;
+  --background-accent-magenta-subtlest-pressed: #aa2c6f;
+  --background-accent-magenta-subtlest-hovered: #8d275d;
+  --background-accent-magenta-subtlest-default: #762550;
+  --background-cycle-night-bold-default: #26b5ff;
+  --background-cycle-night-bold-hovered: #71cdff;
+  --background-cycle-night-bold-pressed: #b4e3ff;
+  --background-cycle-night-subtlest-default: #023059;
+  --background-cycle-night-subtlest-hovered: #034477;
+  --background-cycle-night-subtlest-pressed: #005391;
+  --background-cycle-day-bold-default: #feb939;
+  --background-cycle-day-bold-hovered: #ffd672;
+  --background-cycle-day-bold-pressed: #ffe8a9;
+  --background-cycle-day-subtlest-default: #441f06;
+  --background-cycle-day-subtlest-hovered: #7e4210;
+  --background-cycle-day-subtlest-pressed: #9c4f10;
+  --background-focused-default: #26b5ff;
+  --background-alpha-default: #3f4a4d;
+  --text-default: #d8dedf;
+  --text-selected: #b4e3ff;
+  --text-disabled: #6b6e76;
+  --text-link-default: #71cdff;
+  --text-link-hovered: #b4e3ff;
+  --text-link-pressed: #ddf1ff;
+  --text-subtle: #b5c1c4;
+  --text-inverted: #252a2c;
+  --text-success: #6aebae;
+  --text-information: #b4e3ff;
+  --text-warning: #fee78a;
+  --text-critical: #ffc8c8;
+  --text-subtlest: #6f8488;
+  --text-accent-purple: #d1d4f4;
+  --text-accent-teal: #afe3f2;
+  --text-accent-turquoise: #81fffb;
+  --text-accent-magenta: #f6d4eb;
+  --text-accent-purple-inverted: #292442;
+  --text-accent-teal-inverted: #0f2b3d;
+  --text-accent-turquoise-inverted: #00373a;
+  --text-accent-magenta-inverted: #47102d;
+  --text-brand: #97d2f9;
+  --text-on-warning: #252a2c;
+  --border-disabled: #3b3d42;
+  --border-subtle: #3f4a4d;
+  --border-focused: #26b5ff;
+  --border-bold: #49585b;
+  --border-success-bold: #0abf76;
+  --border-success-subtle: #036240;
+  --border-critical-bold: #f44040;
+  --border-critical-subtle: #9d1717;
+  --border-warning-bold: #eabd08;
+  --border-warning-subtle: #856d0e;
+  --border-information-bold: #009bfe;
+  --border-information-subtle: #005391;
+  --border-selected: #26b5ff;
+  --border-accent-purple-bold: #8270db;
+  --border-accent-purple-subtle: #51458e;
+  --border-accent-teal-bold: #1f92bb;
+  --border-accent-teal-subtle: #215069;
+  --border-accent-turquoise-bold: #00e2d5;
+  --border-accent-turquoise-subtle: #007271;
+  --border-accent-magenta-bold: #da62ac;
+  --border-accent-magenta-subtle: #8d275d;
+  --border-day: #fca013;
+  --border-night: #009bfe;
+  --border-night-subtle: #0060b0;
+  --border-day-subtle: #7e4210;
+  --border-brand: #429aef;
+  --border-selected-inverted: #005391;
+  --border-focus-inverted: #034477;
+  --border-focus: #26b5ff;
+  --border-neutral: #f8f8f8;
+  --border-default: #49585b;
+  --border-invisible: #252a2c;
+  --border-inverted: #252a2c;
+  --icon-default: #ddf1ff;
+  --icon-disabled: #6b6e76;
+  --icon-inverted: #374043;
+  --icon-warning: #fdd847;
+  --icon-critical: #ffa2a2;
+  --icon-success: #2fd88e;
+  --icon-brand: #c1e3fc;
+  --icon-selected: #71cdff;
+  --icon-information: #71cdff;
+  --icon-subtle: #8d9fa3;
+  --icon-subtlest: #6f8488;
+  --icon-accent-purple: #b5b8ec;
+  --icon-accent-teal: #79cee7;
+  --icon-accent-turquoise: #3afff9;
+  --icon-accent-magenta: #efb2da;
+  --icon-day: #feb939;
+  --icon-night: #26b5ff;
+  --icon-on-warning: #374043;
+  --icon-bold: #374043;
+  --logo-comete-default: #f0f8fe;
+  --logo-comete-gradient-dark: #f8bf01;
+  --logo-comete-gradient-light: #fff146;
+  --logo-comete-neutral: #dceefd;
+  --logo-comete-subtlest: #b5c1c4;
+  --logo-comete-inverted: #1e3661;
+  --logo-comete-subtle: #b5c1c4;
+  --blanket-default: rgba(155, 180, 202, 0.5);
+  --interaction-hovered: rgba(255, 255, 255, 0.2);
+  --interaction-pressed: rgba(255, 255, 255, 0.36);
+  --interaction-hovered-mediapicker: rgba(255, 255, 255, 0.2);
+  --interaction-pressed-mediapicker: rgba(255, 255, 255, 0.36);
+}
+
+
+/* ── Fallback: prefers-color-scheme ──────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background-neutral-subtler-default: #49585b;
+    --background-neutral-subtler-hovered: #596b70;
+    --background-neutral-subtler-pressed: #6f8488;
+    --background-neutral-bold-default: #eaedee;
+    --background-neutral-bold-hovered: #d8dedf;
+    --background-neutral-bold-pressed: #b5c1c4;
+    --background-neutral-subtlest-default: #49585b;
+    --background-neutral-subtlest-hovered: #596b70;
+    --background-neutral-subtlest-pressed: #6f8488;
+    --background-disabled-default: #3b3d42;
+    --background-brand-subtlest-default: #1e3661;
+    --background-brand-subtlest-hovered: #224986;
+    --background-brand-subtlest-pressed: #2354aa;
+    --background-brand-bold-default: #97d2f9;
+    --background-brand-bold-hovered: #c1e3fc;
+    --background-brand-bold-pressed: #dceefd;
+    --background-selected-bold-hovered: #dceefd;
+    --background-selected-bold-pressed: #f0f8fe;
+    --background-selected-bold-default: #c1e3fc;
+    --background-selected-subtlest-pressed: #2354aa;
+    --background-selected-subtlest-hovered: #224986;
+    --background-selected-subtlest-default: #1e3661;
+    --background-default-default: #252a2c;
+    --background-default-inverted: #ffffff;
+    --background-surface-default: #374043;
+    --background-surface-mask: rgba(8, 15, 33, 0.31);
+    --background-surface-elevation-sunken-default: #252a2c;
+    --background-surface-elevation-sunken-hovered: #374043;
+    --background-surface-elevation-sunken-pressed: #3f4a4d;
+    --background-surface-elevation-overlay-default: #3f4a4d;
+    --background-surface-elevation-overlay-critical: #2e1717;
+    --background-surface-elevation-overlay-success: #0e2d24;
+    --background-surface-elevation-overlay-accent-purple: #292442;
+    --background-surface-elevation-overlay-accent-teal: #0f2b3d;
+    --background-surface-elevation-overlay-accent-turquoise: #00373a;
+    --background-surface-elevation-overlay-accent-magenta: #47102d;
+    --background-surface-elevation-overlay-information: #023059;
+    --background-surface-elevation-overlay-warning: #292410;
+    --background-surface-elevation-raise-default: #49585b;
+    --background-surface-critical: #2e1717;
+    --background-success-bold-default: #0abf76;
+    --background-success-bold-hovered: #2fd88e;
+    --background-success-bold-pressed: #6aebae;
+    --background-success-subtlest-hovered: #036240;
+    --background-success-subtlest-pressed: #00784d;
+    --background-success-subtlest-default: #245041;
+    --background-warning-bold-default: #eabd08;
+    --background-warning-bold-hovered: #facc15;
+    --background-warning-bold-pressed: #fdd847;
+    --background-warning-subtlest-pressed: #eabd08;
+    --background-warning-subtlest-hovered: #caa204;
+    --background-warning-subtlest-default: #a18207;
+    --background-critical-bold-default: #fc6d6d;
+    --background-critical-bold-hovered: #ffa2a2;
+    --background-critical-bold-pressed: #ffc8c8;
+    --background-critical-subtlest-pressed: #be1717;
+    --background-critical-subtlest-hovered: #9d1717;
+    --background-critical-subtlest-default: #821a1a;
+    --background-information-bold-default: #009bfe;
+    --background-information-bold-hovered: #26b5ff;
+    --background-information-bold-pressed: #71cdff;
+    --background-information-subtlest-pressed: #0060b0;
+    --background-information-subtlest-hovered: #005391;
+    --background-information-subtlest-default: #034477;
+    --background-client-bold-default: #429aef;
+    --background-client-bold-hovered: #66b8f4;
+    --background-client-bold-pressed: #97d2f9;
+    --background-client-subtlest-default: #224986;
+    --background-client-subtlest-hovered: #2354aa;
+    --background-client-subtlest-pressed: #2467d1;
+    --background-accent-purple-bold-default: #9897e2;
+    --background-accent-purple-bold-hovered: #b5b8ec;
+    --background-accent-purple-bold-pressed: #d1d4f4;
+    --background-accent-purple-subtlest-pressed: #5e4db2;
+    --background-accent-purple-subtlest-hovered: #51458e;
+    --background-accent-purple-subtlest-default: #453d72;
+    --background-accent-teal-bold-default: #42b2d7;
+    --background-accent-teal-bold-hovered: #79cee7;
+    --background-accent-teal-bold-pressed: #afe3f2;
+    --background-accent-teal-subtlest-pressed: #1e6080;
+    --background-accent-teal-subtlest-hovered: #215069;
+    --background-accent-teal-subtlest-default: #1f435a;
+    --background-accent-turquoise-bold-default: #00ffef;
+    --background-accent-turquoise-bold-hovered: #3afff9;
+    --background-accent-turquoise-bold-pressed: #81fffb;
+    --background-accent-turquoise-subtlest-pressed: #00918d;
+    --background-accent-turquoise-subtlest-hovered: #007271;
+    --background-accent-turquoise-subtlest-default: #045d5d;
+    --background-accent-magenta-bold-default: #e581c1;
+    --background-accent-magenta-bold-hovered: #efb2da;
+    --background-accent-magenta-bold-pressed: #f6d4eb;
+    --background-accent-magenta-subtlest-pressed: #aa2c6f;
+    --background-accent-magenta-subtlest-hovered: #8d275d;
+    --background-accent-magenta-subtlest-default: #762550;
+    --background-cycle-night-bold-default: #26b5ff;
+    --background-cycle-night-bold-hovered: #71cdff;
+    --background-cycle-night-bold-pressed: #b4e3ff;
+    --background-cycle-night-subtlest-default: #023059;
+    --background-cycle-night-subtlest-hovered: #034477;
+    --background-cycle-night-subtlest-pressed: #005391;
+    --background-cycle-day-bold-default: #feb939;
+    --background-cycle-day-bold-hovered: #ffd672;
+    --background-cycle-day-bold-pressed: #ffe8a9;
+    --background-cycle-day-subtlest-default: #441f06;
+    --background-cycle-day-subtlest-hovered: #7e4210;
+    --background-cycle-day-subtlest-pressed: #9c4f10;
+    --background-focused-default: #26b5ff;
+    --background-alpha-default: #3f4a4d;
+    --text-default: #d8dedf;
+    --text-selected: #b4e3ff;
+    --text-disabled: #6b6e76;
+    --text-link-default: #71cdff;
+    --text-link-hovered: #b4e3ff;
+    --text-link-pressed: #ddf1ff;
+    --text-subtle: #b5c1c4;
+    --text-inverted: #252a2c;
+    --text-success: #6aebae;
+    --text-information: #b4e3ff;
+    --text-warning: #fee78a;
+    --text-critical: #ffc8c8;
+    --text-subtlest: #6f8488;
+    --text-accent-purple: #d1d4f4;
+    --text-accent-teal: #afe3f2;
+    --text-accent-turquoise: #81fffb;
+    --text-accent-magenta: #f6d4eb;
+    --text-accent-purple-inverted: #292442;
+    --text-accent-teal-inverted: #0f2b3d;
+    --text-accent-turquoise-inverted: #00373a;
+    --text-accent-magenta-inverted: #47102d;
+    --text-brand: #97d2f9;
+    --text-on-warning: #252a2c;
+    --border-disabled: #3b3d42;
+    --border-subtle: #3f4a4d;
+    --border-focused: #26b5ff;
+    --border-bold: #49585b;
+    --border-success-bold: #0abf76;
+    --border-success-subtle: #036240;
+    --border-critical-bold: #f44040;
+    --border-critical-subtle: #9d1717;
+    --border-warning-bold: #eabd08;
+    --border-warning-subtle: #856d0e;
+    --border-information-bold: #009bfe;
+    --border-information-subtle: #005391;
+    --border-selected: #26b5ff;
+    --border-accent-purple-bold: #8270db;
+    --border-accent-purple-subtle: #51458e;
+    --border-accent-teal-bold: #1f92bb;
+    --border-accent-teal-subtle: #215069;
+    --border-accent-turquoise-bold: #00e2d5;
+    --border-accent-turquoise-subtle: #007271;
+    --border-accent-magenta-bold: #da62ac;
+    --border-accent-magenta-subtle: #8d275d;
+    --border-day: #fca013;
+    --border-night: #009bfe;
+    --border-night-subtle: #0060b0;
+    --border-day-subtle: #7e4210;
+    --border-brand: #429aef;
+    --border-selected-inverted: #005391;
+    --border-focus-inverted: #034477;
+    --border-focus: #26b5ff;
+    --border-neutral: #f8f8f8;
+    --border-default: #49585b;
+    --border-invisible: #252a2c;
+    --border-inverted: #252a2c;
+    --icon-default: #ddf1ff;
+    --icon-disabled: #6b6e76;
+    --icon-inverted: #374043;
+    --icon-warning: #fdd847;
+    --icon-critical: #ffa2a2;
+    --icon-success: #2fd88e;
+    --icon-brand: #c1e3fc;
+    --icon-selected: #71cdff;
+    --icon-information: #71cdff;
+    --icon-subtle: #8d9fa3;
+    --icon-subtlest: #6f8488;
+    --icon-accent-purple: #b5b8ec;
+    --icon-accent-teal: #79cee7;
+    --icon-accent-turquoise: #3afff9;
+    --icon-accent-magenta: #efb2da;
+    --icon-day: #feb939;
+    --icon-night: #26b5ff;
+    --icon-on-warning: #374043;
+    --icon-bold: #374043;
+    --logo-comete-default: #f0f8fe;
+    --logo-comete-gradient-dark: #f8bf01;
+    --logo-comete-gradient-light: #fff146;
+    --logo-comete-neutral: #dceefd;
+    --logo-comete-subtlest: #b5c1c4;
+    --logo-comete-inverted: #1e3661;
+    --logo-comete-subtle: #b5c1c4;
+    --blanket-default: rgba(155, 180, 202, 0.5);
+    --interaction-hovered: rgba(255, 255, 255, 0.2);
+    --interaction-pressed: rgba(255, 255, 255, 0.36);
+    --interaction-hovered-mediapicker: rgba(255, 255, 255, 0.2);
+    --interaction-pressed-mediapicker: rgba(255, 255, 255, 0.36);
+  }
+}
