@@ -659,20 +659,44 @@
       "$value": "{cool-grey.300}"
     },
     "success": {
-      "$type": "color",
-      "$value": "{green.600}"
+      "bold": {
+        "$type": "color",
+        "$value": "{green.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{green.200}"
+      }
     },
     "critical": {
-      "$type": "color",
-      "$value": "{red.600}"
+      "bold": {
+        "$type": "color",
+        "$value": "{red.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{red.200}"
+      }
     },
     "warning": {
-      "$type": "color",
-      "$value": "{yellow.600}"
+      "bold": {
+        "$type": "color",
+        "$value": "{yellow.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{yellow.200}"
+      }
     },
     "information": {
-      "$type": "color",
-      "$value": "{blue.600}"
+      "bold": {
+        "$type": "color",
+        "$value": "{blue.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{blue.200}"
+      }
     },
     "selected": {
       "$type": "color",
@@ -680,20 +704,44 @@
     },
     "accent": {
       "purple": {
-        "$type": "color",
-        "$value": "{purple.500}"
+        "bold": {
+          "$type": "color",
+          "$value": "{purple.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{purple.200}"
+        }
       },
       "teal": {
-        "$type": "color",
-        "$value": "{teal.500}"
+        "bold": {
+          "$type": "color",
+          "$value": "{teal.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{teal.200}"
+        }
       },
       "turquoise": {
-        "$type": "color",
-        "$value": "{turquoise.500}"
+        "bold": {
+          "$type": "color",
+          "$value": "{turquoise.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{turquoise.200}"
+        }
       },
       "magenta": {
-        "$type": "color",
-        "$value": "{magenta.500}"
+        "bold": {
+          "$type": "color",
+          "$value": "{magenta.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{magenta.200}"
+        }
       }
     },
     "day": {
