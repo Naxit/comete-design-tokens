@@ -741,19 +741,19 @@
     "accent": {
       "purple": {
         "$type": "color",
-        "$value": "{purple.700}"
+        "$value": "{purple.800}"
       },
       "teal": {
         "$type": "color",
-        "$value": "{teal.700}"
+        "$value": "{teal.800}"
       },
       "turquoise": {
         "$type": "color",
-        "$value": "{turquoise.700}"
+        "$value": "{turquoise.800}"
       },
       "magenta": {
         "$type": "color",
-        "$value": "{magenta.700}"
+        "$value": "{magenta.800}"
       },
       "purple-inverted": {
         "$type": "color",
