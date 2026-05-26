@@ -884,26 +884,6 @@
         }
       }
     },
-    "day": {
-      "$type": "color",
-      "$value": "{orange.600}"
-    },
-    "night": {
-      "$type": "color",
-      "$value": "{blue.600}"
-    },
-    "night-subtle": {
-      "$type": "color",
-      "$value": "{blue.300}"
-    },
-    "day-subtle": {
-      "$type": "color",
-      "$value": "{orange.100}"
-    },
-    "brand": {
-      "$type": "color",
-      "$value": "{comete.blue.700}"
-    },
     "selected-inverted": {
       "$type": "color",
       "$value": "{blue.200}"
@@ -911,10 +891,6 @@
     "focus-inverted": {
       "$type": "color",
       "$value": "{blue.100}"
-    },
-    "focus": {
-      "$type": "color",
-      "$value": "{blue.500}"
     },
     "neutral": {
       "$type": "color",
@@ -931,6 +907,36 @@
     "inverted": {
       "$type": "color",
       "$value": "{white.100}"
+    },
+    "day": {
+      "bold": {
+        "$type": "color",
+        "$value": "{orange.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{orange.100}"
+      }
+    },
+    "night": {
+      "bold": {
+        "$type": "color",
+        "$value": "{blue.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{blue.300}"
+      }
+    },
+    "brand": {
+      "bold": {
+        "$type": "color",
+        "$value": "{comete.blue.700}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{comete.blue.200}"
+      }
     }
   },
   "icon": {
