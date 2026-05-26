@@ -78,6 +78,20 @@
           "$type": "color",
           "$value": "{comete.blue.900}"
         }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.400}"
+        }
       }
     },
     "selected": {
@@ -224,6 +238,20 @@
           "$type": "color",
           "$value": "{green.100}"
         }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{green.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{green.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{green.400}"
+        }
       }
     },
     "warning": {
@@ -253,6 +281,20 @@
         "default": {
           "$type": "color",
           "$value": "{yellow.100}"
+        }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{yellow.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{yellow.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{yellow.400}"
         }
       }
     },
@@ -284,6 +326,20 @@
           "$type": "color",
           "$value": "{red.100}"
         }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{red.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{red.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{red.400}"
+        }
       }
     },
     "information": {
@@ -314,6 +370,20 @@
           "$type": "color",
           "$value": "{blue.100}"
         }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{blue.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{blue.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{blue.400}"
+        }
       }
     },
     "client": {
@@ -343,6 +413,20 @@
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.300}"
+        }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.400}"
         }
       }
     },
@@ -375,6 +459,20 @@
             "$type": "color",
             "$value": "{purple.100}"
           }
+        },
+        "subtler": {
+          "default": {
+            "$type": "color",
+            "$value": "{purple.200}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.400}"
+          }
         }
       },
       "teal": {
@@ -404,6 +502,20 @@
           "default": {
             "$type": "color",
             "$value": "{teal.100}"
+          }
+        },
+        "subtler": {
+          "default": {
+            "$type": "color",
+            "$value": "{teal.200}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.400}"
           }
         }
       },
@@ -435,6 +547,20 @@
             "$type": "color",
             "$value": "{turquoise.100}"
           }
+        },
+        "subtler": {
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.200}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.400}"
+          }
         }
       },
       "magenta": {
@@ -464,6 +590,20 @@
           "default": {
             "$type": "color",
             "$value": "{magenta.100}"
+          }
+        },
+        "subtler": {
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.200}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.400}"
           }
         }
       }
