@@ -523,11 +523,11 @@
         "bold": {
           "default": {
             "$type": "color",
-            "$value": "{turquoise.600}"
+            "$value": "{turquoise.700}"
           },
           "hovered": {
             "$type": "color",
-            "$value": "{turquoise.700}"
+            "$value": "{turquoise.800}"
           },
           "pressed": {
             "$type": "color",
