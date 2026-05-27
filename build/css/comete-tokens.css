@@ -233,6 +233,17 @@
   --dark-grey-solid-800: #a9abaf;
   --dark-grey-solid-900: #bfc1c4;
   --dark-grey-solid-950: #cecfd2;
+  --slate-50: #f5f7fa;
+  --slate-100: #eaedf4;
+  --slate-200: #d1d9e6;
+  --slate-300: #a8b9d1;
+  --slate-400: #7993b7;
+  --slate-500: #58759f;
+  --slate-600: #455d84;
+  --slate-700: #384b6c;
+  --slate-800: #32415a;
+  --slate-900: #2c374b;
+  --slate-950: #1e2533;
   --opacity-0: 0;
   --opacity-25: 0.25;
   --opacity-50: 0.5;
@@ -432,6 +443,7 @@
   --background-surface-elevation-overlay-accent-teal: #eefafd;
   --background-surface-elevation-overlay-accent-turquoise: #edfffd;
   --background-surface-elevation-overlay-accent-magenta: #fcf3f9;
+  --background-surface-elevation-overlay-accent-slate: #f5f7fa;
   --background-surface-elevation-overlay-information: #eff8ff;
   --background-surface-elevation-overlay-warning: #fdfee8;
   --background-surface-elevation-raise-default: #ffffff;
@@ -517,6 +529,15 @@
   --background-accent-magenta-subtler-default: #f6d4eb;
   --background-accent-magenta-subtler-hovered: #efb2da;
   --background-accent-magenta-subtler-pressed: #e581c1;
+  --background-accent-slate-bold-default: #455d84;
+  --background-accent-slate-bold-hovered: #384b6c;
+  --background-accent-slate-bold-pressed: #2c374b;
+  --background-accent-slate-subtlest-default: #eaedf4;
+  --background-accent-slate-subtlest-hovered: #d1d9e6;
+  --background-accent-slate-subtlest-pressed: #a8b9d1;
+  --background-accent-slate-subtler-default: #d1d9e6;
+  --background-accent-slate-subtler-hovered: #a8b9d1;
+  --background-accent-slate-subtler-pressed: #7993b7;
   --background-cycle-night-bold-default: #0060b0;
   --background-cycle-night-bold-hovered: #005391;
   --background-cycle-night-bold-pressed: #034477;
@@ -552,6 +573,8 @@
   --text-accent-teal-inverted: #eefafd;
   --text-accent-turquoise-inverted: #edfffd;
   --text-accent-magenta-inverted: #fcf3f9;
+  --text-accent-slate: #32415a;
+  --text-accent-slate-inverted: #f5f7fa;
   --text-brand: #224986;
   --text-on-warning: #252a2c;
   --border-disabled: #f8f8f8;
@@ -575,6 +598,8 @@
   --border-accent-turquoise-subtle: #81fffb;
   --border-accent-magenta-bold: #da62ac;
   --border-accent-magenta-subtle: #f6d4eb;
+  --border-accent-slate-bold: #58759f;
+  --border-accent-slate-subtle: #d1d9e6;
   --border-selected-inverted: #b4e3ff;
   --border-focus-inverted: #ddf1ff;
   --border-neutral: #374043;
@@ -602,6 +627,7 @@
   --icon-accent-teal: #1f92bb;
   --icon-accent-turquoise: #00e2d5;
   --icon-accent-magenta: #da62ac;
+  --icon-accent-slate: #58759f;
   --icon-day: #f68909;
   --icon-night: #0076d8;
   --icon-on-warning: #374043;
@@ -665,6 +691,7 @@
   --background-surface-elevation-overlay-accent-teal: #0f2b3d;
   --background-surface-elevation-overlay-accent-turquoise: #00373a;
   --background-surface-elevation-overlay-accent-magenta: #47102d;
+  --background-surface-elevation-overlay-accent-slate: #1e2533;
   --background-surface-elevation-overlay-information: #023059;
   --background-surface-elevation-overlay-warning: #292410;
   --background-surface-elevation-raise-default: #49585b;
@@ -750,6 +777,15 @@
   --background-accent-magenta-subtler-default: #8d275d;
   --background-accent-magenta-subtler-hovered: #aa2c6f;
   --background-accent-magenta-subtler-pressed: #c63c8a;
+  --background-accent-slate-bold-default: #7993b7;
+  --background-accent-slate-bold-hovered: #a8b9d1;
+  --background-accent-slate-bold-pressed: #d1d9e6;
+  --background-accent-slate-subtlest-default: #2c374b;
+  --background-accent-slate-subtlest-hovered: #32415a;
+  --background-accent-slate-subtlest-pressed: #384b6c;
+  --background-accent-slate-subtler-default: #32415a;
+  --background-accent-slate-subtler-hovered: #384b6c;
+  --background-accent-slate-subtler-pressed: #455d84;
   --background-cycle-night-bold-default: #26b5ff;
   --background-cycle-night-bold-hovered: #71cdff;
   --background-cycle-night-bold-pressed: #b4e3ff;
@@ -785,6 +821,8 @@
   --text-accent-teal-inverted: #0f2b3d;
   --text-accent-turquoise-inverted: #00373a;
   --text-accent-magenta-inverted: #47102d;
+  --text-accent-slate: #d1d9e6;
+  --text-accent-slate-inverted: #1e2533;
   --text-brand: #dceefd;
   --text-on-warning: #252a2c;
   --border-disabled: #3b3d42;
@@ -808,6 +846,8 @@
   --border-accent-turquoise-subtle: #007271;
   --border-accent-magenta-bold: #da62ac;
   --border-accent-magenta-subtle: #8d275d;
+  --border-accent-slate-bold: #58759f;
+  --border-accent-slate-subtle: #32415a;
   --border-selected-inverted: #005391;
   --border-focus-inverted: #034477;
   --border-neutral: #f8f8f8;
@@ -835,6 +875,7 @@
   --icon-accent-teal: #79cee7;
   --icon-accent-turquoise: #3afff9;
   --icon-accent-magenta: #efb2da;
+  --icon-accent-slate: #a8b9d1;
   --icon-day: #feb939;
   --icon-night: #26b5ff;
   --icon-on-warning: #374043;
@@ -896,6 +937,7 @@
     --background-surface-elevation-overlay-accent-teal: #0f2b3d;
     --background-surface-elevation-overlay-accent-turquoise: #00373a;
     --background-surface-elevation-overlay-accent-magenta: #47102d;
+    --background-surface-elevation-overlay-accent-slate: #1e2533;
     --background-surface-elevation-overlay-information: #023059;
     --background-surface-elevation-overlay-warning: #292410;
     --background-surface-elevation-raise-default: #49585b;
@@ -981,6 +1023,15 @@
     --background-accent-magenta-subtler-default: #8d275d;
     --background-accent-magenta-subtler-hovered: #aa2c6f;
     --background-accent-magenta-subtler-pressed: #c63c8a;
+    --background-accent-slate-bold-default: #7993b7;
+    --background-accent-slate-bold-hovered: #a8b9d1;
+    --background-accent-slate-bold-pressed: #d1d9e6;
+    --background-accent-slate-subtlest-default: #2c374b;
+    --background-accent-slate-subtlest-hovered: #32415a;
+    --background-accent-slate-subtlest-pressed: #384b6c;
+    --background-accent-slate-subtler-default: #32415a;
+    --background-accent-slate-subtler-hovered: #384b6c;
+    --background-accent-slate-subtler-pressed: #455d84;
     --background-cycle-night-bold-default: #26b5ff;
     --background-cycle-night-bold-hovered: #71cdff;
     --background-cycle-night-bold-pressed: #b4e3ff;
@@ -1016,6 +1067,8 @@
     --text-accent-teal-inverted: #0f2b3d;
     --text-accent-turquoise-inverted: #00373a;
     --text-accent-magenta-inverted: #47102d;
+    --text-accent-slate: #d1d9e6;
+    --text-accent-slate-inverted: #1e2533;
     --text-brand: #dceefd;
     --text-on-warning: #252a2c;
     --border-disabled: #3b3d42;
@@ -1039,6 +1092,8 @@
     --border-accent-turquoise-subtle: #007271;
     --border-accent-magenta-bold: #da62ac;
     --border-accent-magenta-subtle: #8d275d;
+    --border-accent-slate-bold: #58759f;
+    --border-accent-slate-subtle: #32415a;
     --border-selected-inverted: #005391;
     --border-focus-inverted: #034477;
     --border-neutral: #f8f8f8;
@@ -1066,6 +1121,7 @@
     --icon-accent-teal: #79cee7;
     --icon-accent-turquoise: #3afff9;
     --icon-accent-magenta: #efb2da;
+    --icon-accent-slate: #a8b9d1;
     --icon-day: #feb939;
     --icon-night: #26b5ff;
     --icon-on-warning: #374043;

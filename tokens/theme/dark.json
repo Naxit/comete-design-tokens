@@ -187,6 +187,10 @@
             "magenta": {
               "$type": "color",
               "$value": "{magenta.950}"
+            },
+            "slate": {
+              "$type": "color",
+              "$value": "{slate.950}"
             }
           },
           "information": {
@@ -606,6 +610,50 @@
             "$value": "{magenta.600}"
           }
         }
+      },
+      "slate": {
+        "bold": {
+          "default": {
+            "$type": "color",
+            "$value": "{slate.400}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{slate.300}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{slate.200}"
+          }
+        },
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{slate.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{slate.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{slate.700}"
+          }
+        },
+        "subtler": {
+          "default": {
+            "$type": "color",
+            "$value": "{slate.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{slate.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{slate.600}"
+          }
+        }
       }
     },
     "cycle": {
@@ -770,6 +818,14 @@
       "magenta-inverted": {
         "$type": "color",
         "$value": "{magenta.950}"
+      },
+      "slate": {
+        "$type": "color",
+        "$value": "{slate.200}"
+      },
+      "slate-inverted": {
+        "$type": "color",
+        "$value": "{slate.950}"
       }
     },
     "brand": {
@@ -881,6 +937,16 @@
         "subtle": {
           "$type": "color",
           "$value": "{magenta.800}"
+        }
+      },
+      "slate": {
+        "bold": {
+          "$type": "color",
+          "$value": "{slate.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{slate.800}"
         }
       }
     },
@@ -1000,6 +1066,10 @@
       "magenta": {
         "$type": "color",
         "$value": "{magenta.300}"
+      },
+      "slate": {
+        "$type": "color",
+        "$value": "{slate.300}"
       }
     },
     "day": {
