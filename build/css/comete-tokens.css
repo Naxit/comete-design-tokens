@@ -514,12 +514,12 @@
   --background-accent-turquoise-bold-default: #00918d;
   --background-accent-turquoise-bold-hovered: #007271;
   --background-accent-turquoise-bold-pressed: #045d5d;
-  --background-accent-turquoise-subtlest-pressed: #3afff9;
-  --background-accent-turquoise-subtlest-hovered: #81fffb;
-  --background-accent-turquoise-subtlest-default: #c0fffc;
-  --background-accent-turquoise-subtler-default: #81fffb;
-  --background-accent-turquoise-subtler-hovered: #3afff9;
-  --background-accent-turquoise-subtler-pressed: #00ffef;
+  --background-accent-turquoise-subtlest-pressed: #81fffb;
+  --background-accent-turquoise-subtlest-hovered: #c0fffc;
+  --background-accent-turquoise-subtlest-default: #edfffd;
+  --background-accent-turquoise-subtler-default: #c0fffc;
+  --background-accent-turquoise-subtler-hovered: #81fffb;
+  --background-accent-turquoise-subtler-pressed: #3afff9;
   --background-accent-magenta-bold-default: #c63c8a;
   --background-accent-magenta-bold-hovered: #aa2c6f;
   --background-accent-magenta-bold-pressed: #762550;
