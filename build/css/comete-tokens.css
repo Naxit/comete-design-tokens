@@ -612,7 +612,7 @@
   --border-night-subtle: #71cdff;
   --border-brand-bold: #224986;
   --border-brand-subtle: #c1e3fc;
-  --icon-default: #005391;
+  --icon-default: #32415a;
   --icon-disabled: #dddee1;
   --icon-inverted: #f7f8f8;
   --icon-warning: #856d0e;
@@ -860,7 +860,7 @@
   --border-night-subtle: #0060b0;
   --border-brand-bold: #dceefd;
   --border-brand-subtle: #2354aa;
-  --icon-default: #ddf1ff;
+  --icon-default: #eaedf4;
   --icon-disabled: #6b6e76;
   --icon-inverted: #374043;
   --icon-warning: #fdd847;
@@ -1106,7 +1106,7 @@
     --border-night-subtle: #0060b0;
     --border-brand-bold: #dceefd;
     --border-brand-subtle: #2354aa;
-    --icon-default: #ddf1ff;
+    --icon-default: #eaedf4;
     --icon-disabled: #6b6e76;
     --icon-inverted: #374043;
     --icon-warning: #fdd847;

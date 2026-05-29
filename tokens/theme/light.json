@@ -1008,7 +1008,7 @@
   "icon": {
     "default": {
       "$type": "color",
-      "$value": "{blue.800}"
+      "$value": "{blue-grey.800}"
     },
     "disabled": {
       "$type": "color",
